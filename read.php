@@ -45,6 +45,9 @@ $result = $conn->query($sql);
         ?>
     </table>
 
+    <p><a href="gitflow_info.php">Informações sobre o GitFlow</a></p>
+
+
 </body>
 
 </html>
