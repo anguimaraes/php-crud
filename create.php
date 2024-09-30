@@ -10,5 +10,8 @@
   <input type="submit" value="Enviar">
 </form>
 
+<p><a href="read.php">Ver lista de usuários</a></p>
+
+
 </body>
 </html>
