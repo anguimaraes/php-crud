@@ -19,15 +19,18 @@ $result = $conn->query($sql);
         <th>ID</th>
         <th>Nome</th>
         <th>Endereço</th>
+        <th>Ações</th>
+
     </tr>
     <?php
     if ($result->num_rows > 0) {
         // Saída de dados de cada linha
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
-            echo "<td>" . $row["id"]. "</td>";
-            echo "<td>" . $row["nome"]. "</td>";
-            echo "<td>" . $row["endereco"]. "</td>";
+            echo "<td>" . $row["id"] . "</td>";
+            echo "<td>" . $row["nome"] . "</td>";
+            echo "<td>" . $row["endereco"] . "</td>";
+            echo "<td><a href='update.php?id=" . $row["id"] . "'>Editar</a></td>";
             echo "</tr>";
         }
     } else {
